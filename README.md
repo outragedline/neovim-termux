@@ -226,7 +226,7 @@ Ao rodar esse comando ele irá parar algumas vezes esperando que você diga o qu
 O nvim tem algumas dependências pra que funcione corretamente, vamos instalar elas
 
 ```
-pkg install nodejs-lts python git nvim
+pkg install nodejs-lts python git neovim
 ```
 Após rodar o código acima ele irá pedir uma confirmação,aperte _**y**_ e dê enter
 
