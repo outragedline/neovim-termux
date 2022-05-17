@@ -1,8 +1,10 @@
 ##  Chegando em breve
 ---
-Guia de criação de atalhos personalizados
-Guia de comandos do coc
-Guia de vim script basico
+1. Guia de criação de atalhos personalizados
+1. Guia de comandos do coc
+1. Guia de vim script basico
+
+
 
 
 
