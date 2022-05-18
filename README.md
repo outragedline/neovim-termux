@@ -60,6 +60,7 @@
         * [go to type definition](#go-to-type-definition)
        * [List extensions](#list-extensions)
        * [COC commands](#coc-commands)
+* [Rodando Html](#rodando-html)
 * [Suporte](#suporte)
 
 
@@ -93,11 +94,13 @@ diretórios são pastas,isso mesmo,pastas de computador,igual aquelas que você 
 comando | o que ele faz
 ---|---
 `cd` | abre um diretório
+`cd ..` | abre o diretório anterior / volta um diretório
 `ls` | lista tudo que existe dentro do diretório atual 
 `mkdir` | cria um novo diretório
 `rm` | apaga  um arquivo
 `rm -r` | apaga um diretório
 `rm -rf` | use se não conseguir apagar com `rm -r`
+`ctrl+c` | encerra servidores & cancela ações como instalar algum pacote ou clonar um repositório
 
 ### Gerenciador de pacotes
 
@@ -281,6 +284,11 @@ Com ele aberto,vamos rodar o comando
 ```
 :PlugInstall
 ```
+_**Atenção**_
+Aantes de copiar e colar os comandos do vim (os que começam com `:`) **abra o command mode** ,caso contrario você não vai consegir rodar o comando
+
+Para abrir o command mode digite `:`
+
 Agora saia do nvim utilizando o atlho `ctrl+x` ou digitando `:qa!`
 
 Abra ele novamente e você verá as diferenças,agora o seu nvim está pronto pra uso,vamos aprender um pouco mais sobre ele
@@ -493,6 +501,39 @@ No normal mode tecle `espaço+e` e serão listadas todas as extensões instalada
 
 ### Coc commands
 No normal mode tecle `espaço+c` para listar os comandos  do coc, você pode pesquisar pelo nome de um comando e executalo selecionando ele e dando enter
+
+
+# Rodando html
+É possivel rodar html no termux utilizando um pacote  chamado live-server,similar a extensão do vscode de mesmo nome
+
+Provavelmente você não vai querer fechar o editor de codigo pra poder ver a preview,então você pode criar uma nova sessão no termux,assim tendo uma com o codigo aberto e outra rodando o servidor
+
+Para criar uma nova sessão no termux,araste a tela da esquerda pra direita mais ou menos na altura onde ficam os botões de volume,feito isso você vai ver todas as sessões abertas e poderá criar uma nova
+
+certo,agora vamos pra instalação do live-server
+
+para isso,rode o comando
+```
+npm install -g --force  live-server
+
+```
+após isso,use este comando pra garantir que vai instalar corretamente
+```
+npm audit  fix --force
+```
+
+Caso queira conferir se instalou, rode o comando
+```
+npm -g list
+```
+
+Para rodar um arquivo html você precisa navegar até o diretório onde o arquivo está e usar o comando
+
+```live-server arquivo```
+
+
+
+Para encerrar o srvidor use `ctrl+c`
 
 
 # Suporte
