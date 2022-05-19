@@ -281,6 +281,9 @@ Com ele aberto,vamos rodar o comando
 ```
 :PlugInstall
 ```
+Provavelmente quando você rodar esse comando vão aparecer alguns erros no terminal do vim,apenas dê enter e ignore
+
+
 _**Atenção**_
 Aantes de copiar e colar os comandos do vim (os que começam com `:`) **abra o command mode** ,caso contrario você não vai consegir rodar o comando
 
