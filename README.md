@@ -253,7 +253,6 @@ Pronto, você terminou de instalar todas as dependências do nvim
 ---
 Após instalar as dependências,vamos configurar o nvim
 
-para isso você terá que criar uma pasta chamada .config
 
 vamos instalar os arquivos de configuração nessa pasta em uma pasta chamada `.config`
 ```
