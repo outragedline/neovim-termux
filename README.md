@@ -543,7 +543,9 @@ npm -g list
 
 Para rodar um arquivo html você precisa navegar até o diretório onde o arquivo está e usar o comando
 
-```live-server arquivo```
+```
+live-server arquivo
+```
 
 ou você também pode rodar direto pelo command mode do nvim
 ```
