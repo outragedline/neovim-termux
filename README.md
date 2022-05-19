@@ -116,6 +116,9 @@ comando | o que faz
 
 ## Vim básico
 ---
+[documentação vim](https://www.vim.org/docs.php)
+
+
 ### Modos
 O vim fuciona por meio de modos,e possui 4 modos principais,o **normal**,o **visual**,o **insert** e o **command** ,iremos falar sobre cada um individualmente
 
@@ -178,6 +181,7 @@ redo | a partir do modo normal digite `:redo` | realiza a função redo,refaz ta
 next buffer | a partir do modo normal digite `:bNext` | troca para o próximo buffer
 previous buffer | a partir do modo normal digite `:bprevious` | troca para o buffer anterior
 term | a partir do modo normal digite `:term` | abre um terminal em uma nova janela
+! | ao utilizar `:!` isso te permite usar comandos do terminal linux sem fechar o nvim | Executa comandos do terminal
 find | a partir do modo normal,digite `/termo`  | procura no arquivo atual o termo digitado após a `/`
 
 Quando estiver no command mode a airline  acima do teclado estará assim:
@@ -224,7 +228,8 @@ apt full-upgrade
 Ao rodar esse comando ele irá parar algumas vezes esperando que você diga o que fazer, só dar enter que ele volta a instalar
 
 # Instalando nvim
-----
+---
+[documentação nvim](https://neovim.io/doc/user/)
 ## instalando dependências do nvim
 O nvim tem algumas dependências pra que funcione corretamente, vamos instalar elas
 
@@ -368,6 +373,9 @@ não se preocupe,isso não apaga o arquivo,apenas o fecha,então salve o arquivo
 ##  Explorador de arquivos / NERDTree
 
 ### Manual NERDTree
+
+[repositorio da nerdtree](https://github.com/preservim/nerdtree)
+
 O explorador de arquivos configurado é a NERDTree, é um explorador bem completo com muitas opções
 
 
@@ -406,6 +414,9 @@ Para ver arquivos ocultos pela NERDTree , você só precisa teclar um `I` e eles
 Para abrir a NERDTree na tela inteira você precisa teclar `A` ,e para voltar ao normal tecle `A`  novamente
 
 ## Manual Telescope
+
+[repositorio do telescope](https://github.com/nvim-telescope/telescope.nvim)
+
 
 ![Telescope](https://user-images.githubusercontent.com/81770118/168707068-0adc3d7f-a629-4dfa-a5aa-711f6ace89c1.jpg)
 
@@ -460,6 +471,9 @@ Caso você queira ver a documentação do vim/nvim você pode usar o comando:
 ```
 
 # COC (conquer of completiom)
+
+[repositório do coc](https://github.com/neoclide/coc.nvim)
+
 Esse é sem dúvidas o plugin mais importante instalado no neovim,ele é similar ao intelisense do vscode e é responsável pelo autocomplete,go to definition ,etc
 
 ## Adicionando suporte a uma linguagem
@@ -531,9 +545,15 @@ Para rodar um arquivo html você precisa navegar até o diretório onde o arquiv
 
 ```live-server arquivo```
 
+ou você também pode rodar direto pelo command mode do nvim
+```
+:! live-server %
+```
+
+O `%` se refere ao arquivo atual,isso seria o mesmo que colicar o caminho inteira até o arquivo,porém assim é muito mais rapido
 
 
-Para encerrar o srvidor use `ctrl+c`
+Para encerrar o servidor use `ctrl+c`
 
 
 # Suporte
@@ -542,5 +562,7 @@ Esse repositório ainda está em desenvolvimento,caso você tenha algum problema
 o objetivo do projeto é ajudar iniciantes então não interessa se sua duvida é boba,me mande uma mensagem,ajudarei a resolver seu problema e atualizarei esse readme para que outras pessoas consigam resolver sozinhas
 
 contatos:
+
 [telegram](https://t.me/outragedline)
+
 [twitter](https://twitter.com/outragedline?s=08)
