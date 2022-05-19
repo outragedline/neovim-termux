@@ -254,21 +254,14 @@ Pronto, você terminou de instalar todas as dependências do nvim
 Após instalar as dependências,vamos configurar o nvim
 
 para isso você terá que criar uma pasta chamada .config
-```
-mkdir .config
-```
-e então abrir a pasta que acabou de ser criada
-```
-cd .config
-```
 
-após isso, vamos instalar os arquivos de configuração nessa pasta
+vamos instalar os arquivos de configuração nessa pasta em uma pasta chamada `.config`
 ```
-git clone https://github.com/outragedline/neovim-termux .
+git clone https://github.com/outragedline/neovim-termux .config
 ```
 Caso queira você pode remover o readme.md , esse arquivo não tem nenhuma função
 ```
-rm README.md
+rm .config/README.md
 ```
 
 Ok,agora o seu neovim tá todo configurado, só falta instalar os plugins
