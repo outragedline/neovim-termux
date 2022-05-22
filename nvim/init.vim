@@ -145,8 +145,7 @@ let g:airline_powerline_fonts = 1
 
 " NerdTree """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <C-a> :NERDTreeToggle<CR>
-
-
+ 
 
 
 
