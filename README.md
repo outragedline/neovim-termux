@@ -1,5 +1,4 @@
 ## Atualização
-O nvim  foi atualizado porém o readme ainda não foi
 ### novidades
 * mudança de vários plugins
 * migração para lua
@@ -9,7 +8,7 @@ O nvim  foi atualizado porém o readme ainda não foi
 ---
 1. Guia de criação de atalhos personalizados
 1. Guia de comandos do coc
-1. Guia de vim script basico
+1. Guia de vim script e lua basico
 
 
 
@@ -224,13 +223,7 @@ A cor  você pode escolher,a que eu utilizo é a dracula, porém escolha a que m
 
 Após instalado e estilizado, você deve rodar o comando
 ```
-apt update
-```
-
-Após utilizar o update,use o comando que atualiza todos os pacotes do termux
-
-```
-apt full-upgrade
+apt update && apt full-upgrade
 ```
 Ao rodar esse comando ele irá parar algumas vezes esperando que você diga o que fazer, só dar enter que ele volta a instalar
 
@@ -241,7 +234,7 @@ Ao rodar esse comando ele irá parar algumas vezes esperando que você diga o qu
 O nvim tem algumas dependências pra que funcione corretamente, vamos instalar elas
 
 ```
-pkg install nodejs-lts python git neovim
+pkg install git python nodejs-lts neovim lua54
 ```
 Após rodar o código acima ele irá pedir uma confirmação,aperte _**y**_ e dê enter
 
@@ -278,15 +271,15 @@ A primeira coisa que você deve fazer é voltar pra pasta home, para isso,use o 
 
 certo, agora vamos baixar o  vim-plug para que o nvim fucione com todos os plugins
 ```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-Ótimo, agora que temos o vim plug instalado é só instalar os plugins,vamos abrir o nvim,para isso é só digitar `nvim` no terminal
+Ótimo, agora que temos o vim plug instalado é só instalar os plugins,vamos abrir o nvim,para isso é só digitar `nvim` no terminal,vai aparecer um monte de erros,ignore e aperte `esc`
 
 Com ele aberto,vamos rodar o comando
 ```
-:PlugInstall
+:PackerInstall
 ```
 Provavelmente quando você rodar esse comando vão aparecer alguns erros no terminal do vim,apenas dê enter e ignore
 
@@ -296,24 +289,10 @@ Aantes de copiar e colar os comandos do vim (os que começam com `:`) **abra o c
 
 Para abrir o command mode digite `:`
 
-Agora saia do nvim utilizando o atlho `ctrl+x` ou digitando `:qa!`
+Agora saia do nvim utilizando o atalho `ctrl+x` ou digitando `:qa!`
 
 Abra ele novamente e você verá as diferenças,agora o seu nvim está pronto pra uso,vamos aprender um pouco mais sobre ele
 
-
-### Instalando dependências de plugins
-
-#### Dependências Telescope
-```
-
-pkg install ripgrep
-
-```
-```
-
-pkg install fd
-
-```
 
 # Manual nvim
 
@@ -343,8 +322,7 @@ Atalho | comando | o que faz
 `ctrl+s` | `:w!` | salva  o arquivo
 `ctrl+x` | `:qa!` | fecha todos os arquivos e sai do nvim
 `ctrl+q` | `:q!` | fecha o arquivo atual, caso você tenha várias janelas abertas ele vai fechar a que você estiver com o cursor
-`ctrl+t` | `:split | resize 5 | term` | abre um terminal em uma janela  com tamanho formatado
-`ctrl+r` |  `plug coderunner` | executa o código
+`ctrl+t` | `:FloatermNew` | abre um terminal flutuante,pra fechar digite `exit`
 `leader+bp` | `:bp` | muda para o buffer anterior
 `leader+bn` | `:bn` | muda para o próximo buffer
 `leader+u` | `:u` | undo,desfaz última ação
