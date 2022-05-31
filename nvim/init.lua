@@ -1,0 +1,7 @@
+vim.cmd([[let mapleader = "-"]])
+require('plugins.plugins')
+require('plugins.set_plugins')
+require('configs.settings')
+require('configs.mappings')
+require('lsp.coc')
+require('theme.theme')

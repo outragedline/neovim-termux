@@ -1,0 +1,6 @@
+vim.cmd([[nmap <C-s> :w!<CR>]])
+vim.cmd([[nmap <c-x> :qa!<CR>]])
+vim.cmd([[nmap <c-q> :q!<CR>]])
+vim.cmd([[nnoremap <C-t> :FloatermNew<CR>]])
+vim.cmd([[nmap <leader>u :u <CR>]])
+vim.cmd([[nmap <leader>r :redo <CR>]])
