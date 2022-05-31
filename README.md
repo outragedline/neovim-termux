@@ -1,3 +1,10 @@
+## Atualização
+O nvim  foi atualizado porém o readme ainda não foi
+### novidades
+* mudança de vários plugins
+* migração para lua
+
+
 ##  Chegando em breve
 ---
 1. Guia de criação de atalhos personalizados
