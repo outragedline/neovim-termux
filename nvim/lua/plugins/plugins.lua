@@ -22,7 +22,5 @@ return require('packer').startup(function()
 
   use 'sheerun/vim-polyglot'
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
-  use 'Xuyuanp/nerdtree-git-plugin'
-  use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
 
 end)
