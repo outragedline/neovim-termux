@@ -269,13 +269,13 @@ Ok,agora o seu neovim tá todo configurado, só falta instalar os plugins
 
 A primeira coisa que você deve fazer é voltar pra pasta home, para isso,use o comando `cd` e ele voltará automaticamente pra lá
 
-certo, agora vamos baixar o  vim-plug para que o nvim fucione com todos os plugins
+certo, agora vamos baixar o  packer para que o nvim fucione com todos os plugins
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-Ótimo, agora que temos o vim plug instalado é só instalar os plugins,vamos abrir o nvim,para isso é só digitar `nvim` no terminal,vai aparecer um monte de erros,ignore e aperte `esc`
+Ótimo, agora que temos o packer instalado é só instalar os plugins,vamos abrir o nvim,para isso é só digitar `nvim` no terminal,vai aparecer um monte de erros,ignore e aperte `esc`
 
 Com ele aberto,vamos rodar o comando
 ```
