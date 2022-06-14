@@ -8,7 +8,7 @@ set.softtabstop=2
 set.shiftwidth=2
 set.smarttab = true
 set.smartindent = true
-set.ignorecase = true
+set.ignorecase = false
 set.smartcase = true
 set.scrolloff=8
 set.sidescrolloff=8
@@ -19,7 +19,7 @@ set.swapfile = false
 set.splitright = true
 set.splitbelow = true
 set.autoread = true
-
+set.hidden = true
 set.signcolumn = "yes"
 set.cursorline = true 
 set.number = true  -- enable line number
@@ -33,12 +33,9 @@ set.filetype =  "on"
 set.filetype =  "plugin"
 set.filetype =  "indent"
 
-
-
--- enable autosave
-set.hidden = true -- comment this line and uncomment  the  bellow to enable autosave 
--- set.autowrite = true
--- set.autowriteall = true 
+-- autosave
+set.autowriteall = true
+set.autowrite = true
 
 vim.cmd([[
   augroup packer_user_config

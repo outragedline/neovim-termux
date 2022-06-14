@@ -1,8 +1,16 @@
-local configs = require("nvim-treesitter.configs")
+local TS_status_ok, configs = pcall(require, "nvim-treesitter.configs")
+if not TS_status_ok then
+	return
+end
+
+disable_list = {}
+
+
 configs.setup {
   highlight = {
     enable = true, -- false will disable the whole extension
     additional_vim_regex_highlighting = true,
+		disable = {disable_list}
 
   },
   indent = { enable = true },

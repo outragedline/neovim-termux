@@ -7,6 +7,5 @@ require("plugins.git")
 require("plugins.project")
 require("plugins.impatient")
 require('plugins.alpha')
+require('plugins.colorizer')
 
-
-require('bufferline').setup {}
