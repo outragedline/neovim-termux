@@ -1,5 +1,10 @@
 ## Novidades
 
+Dependência do telescope que faltou na ultima atualização
+```
+pkg install fd
+```
+
 O readme foi totalmente reformulado
 
 Muitos plugins foram adicionados
@@ -338,7 +343,7 @@ Já o neovim apresenta todas as vantagens do vim comum,mas a grande vantagem del
 O neovim possui algumas dependências pra que fucione corretamente,copie e cole os códigos abaixo
 
 ```
-pkg install python nodejs-lts git neovim  lua54 ripgrep  wget
+pkg install python nodejs-lts git neovim  lua54 ripgrep  wget fd
 ```
 Caso peça alguma confirmação,aperte _y_ e **enter**
 
