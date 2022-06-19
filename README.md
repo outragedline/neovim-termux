@@ -1,16 +1,15 @@
 ## Novidades
 
+Plugins removidos
+plugin | motivo | alternativa
+---|---|---
+toggleterm | causa erros graves (segmentation fault error) | abrir um segundo terminal no próprio termux
+lsp signature | atrapalha mais do que ajuda | usar o atalho **CTRL+s no modo insert**  ou o comando `:lua vim.lsp.buf.signature_help()`
+
 Dependência do telescope que faltou na ultima atualização
 ```
 pkg install fd
 ```
-
-O readme foi totalmente reformulado
-
-Muitos plugins foram adicionados
-
-O coc.nvim foi substituído pelo lsp  nativo
-
 
 
 
@@ -403,6 +402,7 @@ dd | apaga a linha sob o cursor
 de | apaga até o fim da palavra sob o  cursor
 d$ | apaga da posição do cursor até o fim da linha
 d^ | apaga  da posição do cursor até o inicio da linha
+x | apaga caractere selecionado
 yy | copia a linha sob o cursor
 ye | copia até o fim da palavra sob o cursor 
 y$ | copia da posição do cursor até o fim da linha
@@ -801,7 +801,7 @@ Com esse comando é possível abrir ele diretamente,independentemente de onde vo
 nvim ~/.config/nvim/lua/lsp/null-ls.lua
 ```
 
-![print do arquivo null-ls]() 
+![print do arquivo null-ls](https://user-images.githubusercontent.com/81770118/174466466-366453ff-c619-43e1-ba45-7fbdb86aa578.jpg) 
 
 Como visto na imagem acima,tudo que precisei fazer foi escrever dentro da lista __*sources*__ , **formatting.black,** para configurar  o black como formatador,e **diagnostics.flake8,** para adicionar os diagnósticos , todos com uma **virgula no final** , caso contrário dará erro
 
@@ -836,6 +836,7 @@ gl | mostra os diagnósticos da linha atual
 ]d | pula pra próxima linha com diagnósticos a serem mostrados
 leader+q  | mostra uma lista com todos os diagnósticos do arquivos
 CTRL+f | formata o código
+CTRL+s | (modo insert) mostra a assinatura da função ou classe
 
 
 ### Bufferline
@@ -983,6 +984,9 @@ Basicamente o terminal passa a descrever o local onde o ponteiro do mouse está,
 Não há uma solução pra esse erro,você vai ter que  fechar esse terminal , aperte CTRL+c pra cancelar a operaçao atual e então digite **exit**
 
 Para evitar esse erro é recomendado que ao invés de abrir o terminal direto no vim,abra  vários terminais no termux ,isso será muito melhor e não tem chance de dar erro
+
+
+
 
 # Conteudo  recomendado
 Talvez você  esteja procurando por mais conteudo sobre vim para  aprender  a configurar ou usar o neovim da melhor forma possivel,então aqui estão alguns dos conteudos que me ajudaram muito a configurar o meu neovim
