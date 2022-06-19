@@ -30,6 +30,7 @@ return packer.startup(function()
 	use 'sainnhe/sonokai'
 	use 'morhetz/gruvbox'
 	use 'LunarVim/onedarker.nvim'
+	use "LunarVim/darkplus.nvim"
 
 
 

@@ -1,9 +1,9 @@
 vim.g.mapleader = "-"
-opts = { noremap = true, silent = true }
-fopts = { noremap = false, silent = true }
+local opts = { noremap = true, silent = true }
+local fopts = { noremap = false, silent = true }
 
 -- Shorten function name
-keymap = vim.api.nvim_set_keymap
+local keymap = vim.api.nvim_set_keymap
 
 -- Modes
 --   normal_mode = "n",
