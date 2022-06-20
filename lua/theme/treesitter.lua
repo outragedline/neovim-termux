@@ -3,7 +3,8 @@ if not TS_status_ok then
 	return
 end
 
-disable_list = {}
+local synxtax_disable_list = {} --add a language  here to disable TreeSitter highlight for this lang
+local indent_disable_list = {"python"} --add a language  here to disable TreeSitter indent for this lang
 
 
 configs.setup {
@@ -13,7 +14,9 @@ configs.setup {
 		disable = {disable_list}
 
   },
-  indent = { enable = true },
+  indent = { enable = true,
+disable = indent_disable_list
+},
   rainbow = {
     enable = true,
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for

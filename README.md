@@ -631,7 +631,7 @@ No modo visual fuciona da mesma forma que no normal,porém voccê pode mover  v�
 
 ### TreeSitter
 [mais informações](https://github.com/tree-sitter/tree-sitter) 
-O TreeSitter é um plugin que serve pra ter melhor highlighting pra certas linguagens
+O TreeSitter é um plugin que serve pra ter melhor highlighting e indentação pra certas linguagens
 
 Ele fuciona muito bem em algumas,em outras nem tanto
 
@@ -642,7 +642,8 @@ Não gostou do highlighting do TreeSitter? É possivel desinstalar usando `:TSUn
 
 O TreeSitter também é o responsável por deixar os parenteses coloridos,então desinstalando isso também para de fucionar
 
-Para desabilitar o highlighting sem desativar o resto,você pode rodar o comando `:TSDisable highlight` toda vez que iniciar o neovim,ou adicionar sua linguagem a "disable_list" no arquivo `~/.config/nvim/lua/theme/treesitter.lua` linha 6
+Para desabilitar o highlighting e/ou indentação sem desativar o resto,você pode rodar o comando `:TSDisable highlight` ou `:TSDisable Indent` toda vez que iniciar o neovim,ou adicionar sua linguagem a "highlight_disable_list" e "indent_disable_list" no arquivo `~/.config/nvim/lua/theme/treesitter.lua` linha 6 e 7
+
 
 ### comment
 [mais informações](https://github.com/numToStr/Comment.nvim#commentstring) 
