@@ -860,7 +860,7 @@ leader+sd | :BufferLineSortByDirectory< CR> | organiza os buffers baseado em que
 
 Gitsigns  é  um plugin simples que mostra as mudanças feitas no  arquivo desde o ultimo commit
 
-Essas mudanças são mostradas através de traços coloridos na coluna de símbolos,do lado esquerdo logo atrás do numero da linha
+Essas mudanças são mostradas pelas cores dos numeros
 
 cores | significado
 ---|---
