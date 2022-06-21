@@ -1,6 +1,6 @@
 local set = vim.opt --short vim.opt in set variable
 
-set.encoding="utf8" -- enable utf8 chars
+set.fileencoding = "utf-8"
 set.mouse="a"
 set.incsearch = true 
 set.tabstop=2 
@@ -27,6 +27,7 @@ set.numberwidth = 3
 set.cmdheight=2
 set.termguicolors = true
 set.title = true
+set.clipboard = "unnamedplus"
 
 -- filetype
 set.filetype =  "on"
