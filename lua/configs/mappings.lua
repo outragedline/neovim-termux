@@ -45,7 +45,7 @@ keymap("n", "<leader>l", "<C-w>l", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
-keymap("v", "p", '_dP', opts) --"paste"  in visual mode replace selected text with the yanked text
+keymap("v", "p", '_dP', fopts) --"paste"  in visual mode replace selected text with the yanked text
 
 
 

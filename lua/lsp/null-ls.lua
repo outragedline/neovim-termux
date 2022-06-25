@@ -12,7 +12,7 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		--formatting binaries
-		formatting.black,  -- python
+		formatting.autopep8,  -- python
 		formatting.djhtml, --htmldjango
     
 		-- linters / diagnostics binaries

@@ -34,6 +34,9 @@ set.filetype =  "on"
 set.filetype =  "plugin"
 set.filetype =  "indent"
 
+-- fold
+set.foldmethod = "indent"
+
 -- autosave
 set.autowriteall = true
 set.autowrite = true

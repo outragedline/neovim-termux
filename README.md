@@ -810,6 +810,8 @@ Como visto na imagem acima,tudo que precisei fazer foi escrever dentro da lista 
 
 Tambem é possível passar argumentos ao configurar o binário,mas issoné algo meio avançado demais
 
+Nota: Substituí o black pelo autopep8 , `pip autopep8`
+
 ##### Formatando
 
 Com os  binários instalados e configurados,você pode formatar o arquivo atual com o  comando
