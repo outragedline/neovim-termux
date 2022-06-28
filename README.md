@@ -1,18 +1,11 @@
 ## Novidades
 
-Plugins removidos
-plugin | motivo | alternativa
----|---|---
-toggleterm | causa erros graves (segmentation fault error) | abrir um segundo terminal no próprio termux
-lsp signature | atrapalha mais do que ajuda | usar o atalho **CTRL+s no modo insert**  ou o comando `:lua vim.lsp.buf.signature_help()`
-
-Dependência do telescope que faltou na ultima atualização
-```
-pkg install fd
-```
-
-
-
+- Instalação da termux api para acesso a clipboard
+	[Clique aqui para instalar o termux api](https://f-droid.org/repo/com.termux.api_51.apk)
+	```
+	pkg install termux-api
+	```
+- Explicação sobre [Folding](#ocultar-linhas) 
 ## sobre
 ![neovim](https://user-images.githubusercontent.com/81770118/173487337-5b969d30-71ec-4f66-8fe2-a550493dfe31.jpg) 
 
@@ -48,6 +41,7 @@ Em caso de duvidas sinta-se livre para abrir uma issue ou entrar em contato dire
 	* [Instalação](#instalação-6)
 	* [Modos](#modos)
 		* [Modo normal](#modo-normal)
+			* [Ocultar linhas](#ocultar-linhas)
 		* [Modo insert](#modo-insert) 
 		* [Modo visual](#modo-visual)
 		* [Modo command](#modo-command)
@@ -132,12 +126,23 @@ Os links abaixo levam diretamente aos apks do fdroid,baixe ambos e os instale at
 
 [clique aqui para baixar o termux styling](https://f-droid.org/repo/com.termux.styling_29.apk)
 
+[Clique aqui para instalar o termux api](https://f-droid.org/repo/com.termux.api_51.apk)
+
+
 Após instalar o termux,abra e cole o comando
 ```
-apt update  && apt full-upgrade
+apt update
 ```
 
-Após isso dê **enter** e ele começará a atualizar todos os pacotes,logo em seguida ele irá pedir uma confirmação,digite _y_ e dê **enter**
+Dê  enter,e após o processo terminar cole o comando
+
+```
+apt upgrade --fix-missing
+```
+
+Uma confirmação será necessária,confirme digitando **y**
+
+Esses dois comandos vão atualizar os pacotes do termux e  garantir que tudo está como deveria estar
 
 Após confirmar ele  irá continuar atualizando tudo,porém ira parar pra pedir algumas configurações,só ignore e dê **enter** toda vez
 
@@ -152,6 +157,10 @@ Procure pela opção **style** (ela só vai aparecer se o termux styling estiver
 Você pode  escolher a fonte e cor que mais te agradarem,tambem é possível instalar novas fontes e cores caso queira
 
 Eu particularmente utilizo a cor **one dark** com a fonte **Hack**
+
+Isso só é possível com o **Termux styling** instalado
+
+O termux também pode ser personalizado usando um arquivo `.bashrc`
 
 ## Interface
 A interface do termux é a de um terminal comum,simplesmente uma tela onde você pode utilizar comandos linux
@@ -342,7 +351,7 @@ Já o neovim apresenta todas as vantagens do vim comum,mas a grande vantagem del
 O neovim possui algumas dependências pra que fucione corretamente,copie e cole os códigos abaixo
 
 ```
-pkg install python nodejs-lts git neovim  lua54 ripgrep  wget fd
+pkg install python nodejs-lts git neovim  lua54 ripgrep fd termux-api
 ```
 Caso peça alguma confirmação,aperte _y_ e **enter**
 
@@ -414,9 +423,26 @@ CTRL+r | refaz ultima ação desfeita
 
 você pode usar as teclas **HOME** e **END** da caixa de ferramentas no lugar das teclas **^**  e **$**
 
-Coisas copiadas ou deletadas no vim não vão para a clipboard,só podem ser coladas usando o __*p*__ dentro do próprio vim
+Coisas copiadas ou deletadas no vim não vão para a clipboard por padrão e só podem ser coladas usando o __*p*__ dentro do próprio vim
 
-Se quiser colar algo da clipboard no vim ,faça como em qualquer outro app,aperte e segure na tela até aparecer a  opção de colar
+Se quiser colar algo da clipboard no vim é nescessário ter o  termux api instalado e a configuração ativa no neovim,caso você tenha feito tudo seguindo este readme,tudo que é nescessário  já está devidamente instalado e configurado então não há  com o que se preocupar
+
+#### Ocultar linhas
+No  neovim é possível ocultar várias linhas de código para que ocupem menos espaço na tela,isso é chamado de folding
+
+O modo como as linhas são ocultadas é baseado no **foldmethod**,nesta configuração as linhas são automaticamente ocultadas com base na indentação
+
+Se quiser saber mais sobre folding,digite o comando `:h fold`
+
+##### Folding keybidings
+A opção de ocultar as linhas tem vários keybidings próprios,aqui os principais
+
+teclas | ação
+---|---
+za | alterna entre ocultar e mostrar as linhas de um fold
+zR | abre  todos os folds do arquivo atual
+
+
 
 ### Modo insert
 O modo insert é o modo que você vai usar pra escrever seus códigos
@@ -525,6 +551,7 @@ Caso você queira substituir todas as palavras de um arwuivo,é só colocar `%` 
 
 `:%s/antiga/nova/g`
 
+
 #### Informações adicionais
 A lista de comandos é extremamente extensa ,mesmo sem nenhum plugin,porém essses  são os que você irá precisar mais , nos próximos tópicos veremos mais comandos de personalização,plugins,etc
 
@@ -538,7 +565,7 @@ As setas cima e baixo servem pra navegar entre os ultimos comandos que você uso
 O caractere `%` indica o caminho até o arquivo atual,então caso eu esteja editando um arquivo python e escreva `:! python %` ele irá entender e rodar
 
 
-**TREINE MUITO ESSES COMANDOS E OS OS OUTROS MODOS,ELES SÃO MUITO IMPORTANTES**
+**TREINE MUITO ESSES COMANDOS E OS DOS OUTROS MODOS,ELES SÃO MUITO IMPORTANTES**
 
 
 
