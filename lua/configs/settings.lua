@@ -28,6 +28,7 @@ set.cmdheight=2
 set.termguicolors = true
 set.title = true
 set.clipboard = "unnamedplus"
+set.confirm = true
 
 -- filetype
 set.filetype =  "on"
@@ -38,8 +39,8 @@ set.filetype =  "indent"
 set.foldmethod = "indent"
 
 -- autosave
-set.autowriteall = true
-set.autowrite = true
+set.autowriteall = false
+set.autowrite = false
 
 vim.cmd([[
   augroup packer_user_config

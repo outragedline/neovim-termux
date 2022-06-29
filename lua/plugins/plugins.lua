@@ -66,6 +66,7 @@ return packer.startup(function()
 	use 'lewis6991/impatient.nvim'
 	use 'github/copilot.vim'
 	use 'norcalli/nvim-colorizer.lua'
+	use "nvim-lua/plenary.nvim"
 
 
 
