@@ -4,7 +4,7 @@ apt update
 
 apt upgrade --fix-missing
 
-pkg install python nodejs-lts git neovim  lua54 ripgrep fd termux-apix
+pkg install python nodejs-lts git neovim  lua54 ripgrep fd termux-api
 
 pip install --upgrade pip
 
