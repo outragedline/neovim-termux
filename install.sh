@@ -1,6 +1,8 @@
 #!/bin/bash
 
-apt update && apt uograde --fix-missing
+apt update 
+
+apt upgrade --fix-missing
 
 pkg install python nodejs-lts git neovim  lua54 ripgrep fd termux-apix
 
