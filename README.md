@@ -44,6 +44,20 @@ Abra o neovim novamente e verá a diferença de imediato
 
 Caso tenha ocorrido algum erro na instalação dos plugins digite o comando `:PackerSync` dentro do nvim, isso irá atualizar todos os plugins e instalar os que não foram instalados  da primeira  vez
 
+## Fonte e ícones
+Para que os ícones sejam mostrados corretamente é necessário mudar a fonte padrão do termux para uma nerdfont
+
+Algumas nerdfonts já vem instaladas com o  termux styling,  só é necessário seguir esse passo a passo pra habilitar:
+
+1. Apertar e segurar em algum lugar da tela até aparecerem as opções __copy, paste e more...__
+1. Escolher a opção __more...__ 
+1. No menu, escolher a opcão style
+1. Clicar em __choose font__ e então escolher alguma
+
+A minha recomendação fica pras fontes hack e firacode, porém a escolha é sua
+
+[mais detalhes](https://github.com/outragedline/neovim-termux/wiki/Termux#personaliza%C3%A7%C3%A3o)
+
 
 
 Com isso você já tem uma ótima ferramenta, leia a [wiki](https://github.com/outragedline/neovim-termux/wiki) para aprender a utilizar e baixar outras coisas legais que podem te  auxiliar
