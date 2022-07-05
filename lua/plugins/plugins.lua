@@ -48,7 +48,7 @@ return packer.startup(function()
 
 
 	-- Treesitter
-	use "nvim-treesitter/nvim-treesitter" -- syntax highlight
+	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 	use { "p00f/nvim-ts-rainbow", requires = "nvim-treesitter" } -- enable rainbow parenthese
 	use 'JoosepAlviste/nvim-ts-context-commentstring' -- convenient line commenting
 	use "numToStr/Comment.nvim"
@@ -56,9 +56,9 @@ return packer.startup(function()
 
 	-- tools
 	use {
-		'nvim-telescope/telescope.nvim',
-		requires = { 'nvim-lua/plenary.nvim', 'sharkdp/fd', 'nvim-treesitter/nvim-treesitter' }
-	}
+	  'nvim-telescope/telescope.nvim',
+	    requires = { {'nvim-lua/plenary.nvim'} }
+	    }
 	use 'windwp/nvim-autopairs' -- autoclose () , {} , '' , etc
 	use 'matze/vim-move' -- move lines and text
 	use 'nvim-lua/popup.nvim'
