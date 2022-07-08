@@ -42,8 +42,8 @@ keymap("n", "<leader>l", "<C-w>l", opts)
 
 
 -- visual mappings
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+keymap("v", "<", "<gv", opts) -- unindent lines
+keymap("v", ">", ">gv", opts) -- indent lines
 
 keymap("v", "p", '_dP', fopts) --"paste"  in visual mode replace selected text with the yanked text
 
