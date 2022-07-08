@@ -1,6 +1,6 @@
 local set = vim.opt --short vim.opt in set variable
 
-set.fileencoding = "utf-8"
+set.encoding = "utf8"
 set.mouse="a"
 set.incsearch = true 
 set.tabstop=2 
@@ -29,7 +29,9 @@ set.termguicolors = true
 set.title = true
 set.clipboard = "unnamedplus"
 set.confirm = true
-
+set.undofile = true
+set.cc = "80"
+set.termguicolors = true
 -- filetype
 set.filetype =  "on"
 set.filetype =  "plugin"
