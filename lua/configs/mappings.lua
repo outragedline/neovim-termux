@@ -53,7 +53,7 @@ keymap("v", "p", '_dP', fopts) --"paste"  in visual mode replace selected text w
 keymap('n', "<C-a>", "<cmd> NvimTreeToggle<CR>", opts)
 keymap('n', "<F4>", "<cmd> RunCode<CR>", opts)
 keymap('n', "<F5>", "<cmd> RunProject<CR>", opts)
-keymap('n', "<F6>", "<cmd> RunProject<CR>", opts)
+keymap('n', "<F6>", "<cmd> SymbolsOutline<CR>", opts)
 
 
 
