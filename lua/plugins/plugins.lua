@@ -61,13 +61,13 @@ return packer.startup(function()
 	    }
 	use 'windwp/nvim-autopairs' -- autoclose () , {} , '' , etc
 	use 'matze/vim-move' -- move lines and text
-	use 'nvim-lua/popup.nvim'
 	use "ahmedkhalf/project.nvim"
 	use 'lewis6991/impatient.nvim'
 	use 'github/copilot.vim'
 	use 'norcalli/nvim-colorizer.lua'
 	use "nvim-lua/plenary.nvim"
-
+	use "simrat39/symbols-outline.nvim"
+	use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
 
 
 
@@ -89,7 +89,8 @@ return packer.startup(function()
 	use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 	use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 	use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
-
+	use "mfussenegger/nvim-dap"
+	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
 	-- snippets
 	use "L3MON4D3/LuaSnip"
