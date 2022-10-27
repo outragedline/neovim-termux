@@ -48,7 +48,7 @@ return packer.startup(function()
 
 
 	-- Treesitter
-	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	use { 'nvim-treesitter/nvim-treesitter'}
 	use { "p00f/nvim-ts-rainbow", requires = "nvim-treesitter" } -- enable rainbow parenthese
 	use 'JoosepAlviste/nvim-ts-context-commentstring' -- convenient line commenting
 	use "numToStr/Comment.nvim"
