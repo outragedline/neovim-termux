@@ -22,27 +22,70 @@ Os links abaixo levam diretamente aos apks do fdroid,baixe todos e os instale at
 [Clique aqui para instalar o termux api](https://f-droid.org/repo/com.termux.api_51.apk)
 
 
-Após instalar o termux,abra e cole o comando
 
+#### Atenção
+Nesse metodo de instalação você precisará de uns 5GB de armazanemanto livre
+
+Será instalado no seu celular a distro Archlinux por meio da ferramenta proot-distro, além dos arquivos de configuração e plugins do neovim
+
+Apesar de ocupar mais memoria, recomendo que siga o metodo completo pra que tenha uma melhor experiencia ao desenvolver no celular 
+
+Caso não tenha espaço suficiente, você pode baixar só o neovim diretamente no termux pela [instalação simples](#instalaçao-simples)
+
+### Instalação completa
+#### Primeira parte
+Após instalar o termux cole esse comando
 ```
 bash <(curl -s https://raw.githubusercontent.com/outragedline/neovim-termux/main/install.sh)
 ```
 
-Isso irá atualizar o termux e instalar o neovim junto com todas suas dependências
+Isso irá baixar o Archlinux pra você através do proot-distro
 
-O comando pode demorar alguns minutos e irá pedir confirmações
+Só aperte enter caso o codigo pare em algum momento
 
-Caso seja necessário confirmar algo,digite _y_ e dê enter, caso seja necessário confirmar mas tenha isso no fim da linha: `[default=N]` , é só dar enter
+O código pode demorar alguns minutos para terminar
 
-Após instalado,abra o neovim para que ele instale os plugins automaticamente,com o comando
+Você saberá que o código terminou quando aparecer algo assim na tela `[root@localhost ~]#`
+
+#### Segunda parte
+Quando o codigo da primeira parte terminar de rodar, espere por alguns segundos e então cole o seguinte comando no seu terminal
 ```
-nvim
+bash <(curl -s https://raw.githubusercontent.com/outragedline/neovim-termux/main/install_arch.sh)
 ```
-Caso algo dê erro ignore por agora e saia do neovim apertando `ctrl x` ou digitando `:q!`
+Isso irá criar um usuario, instalar o neovim e suas dependencias, configurar o termux pra logar automaticamente, esse tipo de coisas
 
-Abra o neovim novamente e verá a diferença de imediato
+Quando você colar esse comando será solicitado um nome de usuario, escolha algo simples como seu proprio nome ou o nick de algum jogo
 
-Caso tenha ocorrido algum erro na instalação dos plugins digite o comando `:PackerSync` dentro do nvim, isso irá atualizar todos os plugins e instalar os que não foram instalados  da primeira  vez
+
+Após, será solicitado criar uma senha, tambem pode ser algo simples, contanto que você não se esqeuça dela ta otimo
+
+Por ultimo, um monte de coisa vai ser atualizada e instalada, esse processo pode demorar um pouco, assim que terminar feche o termux (garanta que os terminais foram fechados) e abra novamente
+
+### Instalação simples
+Cola isso aí no termux
+```
+apt update
+apt upgrade --fix-missing
+pkg install python nodejs-lts git neovim  lua54 ripgrep fd termux-api
+pip install --upgrade pip
+pip install pynvim
+git clone https://github.com/outragedline/neovim-termux .config/nvim
+```
+
+### Final
+Independente do metodo que você escolheu, siga esses ultimos passos
+
+Digite o comando `nvim` no seu terminal para abrir o neovim
+
+Ao abrir pela primeira vez, os plugins serão instalados automaticamente e será possivel acompanhar sua instalação do lado direito da tela
+
+Uma vez que a instalação terminou, feche o neovim digitando `:q!` ou usando o atalho `ctrl alt x`
+
+Abra novamente o neovim e verá a diferença
+
+
+## Leia a wiki
+Agora que você terminou de instalar, leia a [wiki](https://github.com/outragedline/neovim-termux/wiki) para mais informações e tutoriais
 
 ## Fonte e ícones
 Para que os ícones sejam mostrados corretamente é necessário mudar a fonte padrão do termux para uma nerdfont
@@ -64,7 +107,7 @@ Com isso você já tem uma ótima ferramenta, leia a [wiki](https://github.com/o
 
 
 ##  Suporte
-Se tiver algum bug ou erro confira [aqui](https://github.com/outragedline/neovim-termux/wiki/Poss%C3%ADveis-erros-e-bugs), caso essa página não te ajude,abra uma issue
+Se tiver algum bug ou erro confira [aqui](https://github.com/outragedline/neovim-termux/wiki/Poss%C3%ADveis-erros-e-bugs), se isso não te ajudar, abra uma issue
 
 
 Caso você prefira, pode entrar em contato direto comigo no [telegram](https://t.me/Outragedline)
