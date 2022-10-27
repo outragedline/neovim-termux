@@ -11,7 +11,7 @@ configs.setup {
   highlight = {
     enable = true, -- false will disable the whole extension
     additional_vim_regex_highlighting = true,
-		disable = {disable_list}
+		disable = {synxtax_disable_list}
 
   },
   indent = { enable = true,
