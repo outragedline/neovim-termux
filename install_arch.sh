@@ -4,7 +4,7 @@ read username
 mkdir /home/$username
 
 echo "#!/bin/bash" > /data/data/com.termux/files/home/.bashrc
-echo ". proot-distro login archlinux -u $username" >> /data/data/com.termux/files/home/.bashrc
+echo ". proot-distro login archlinux --user $username" >> /data/data/com.termux/files/home/.bashrc
 
 useradd $username
 passwd $username
