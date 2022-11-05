@@ -1,5 +1,5 @@
 require("configs.settings")
 require("configs.mappings")
 require('plugins.main')
-require('theme.main')
+require('ui1.main')
 require('lsp.main')
