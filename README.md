@@ -4,6 +4,8 @@ Este é um repositório  dedicado a ajudar pessoas que buscam programar mesmo  n
 
 É recomendado ler a [wiki](https://github.com/outragedline/neovim-termux/wiki) assim que terminar a instalação,lá tem tutoriais, dicas e bastante conteúdo que pode ser útil
 
+Contribuições são bem vindas, este repositório é principalmente documentação, e eu não atualizo e nem pretendo atualizar muito ele ja que sequer uso mais termux
+porém, ele continua sendo útil para muita gente, então minhas contribuições continuarão ocasionalmente
 ## Instalação
 
 Primeiro teremos que  instalar o termux, um emulador de terminal baseado em debian
