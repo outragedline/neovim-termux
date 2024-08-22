@@ -105,6 +105,3 @@ Com isso você já tem uma ótima ferramenta, leia a [wiki](https://github.com/o
 
 ##  Suporte
 Se tiver algum bug ou erro confira [aqui](https://github.com/outragedline/neovim-termux/wiki/Poss%C3%ADveis-erros-e-bugs), se isso não te ajudar, abra uma issue
-
-
-Caso você prefira, pode entrar em contato direto comigo no [telegram](https://t.me/Outragedline)
