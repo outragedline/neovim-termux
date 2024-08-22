@@ -6,6 +6,8 @@ Este é um repositório  dedicado a ajudar pessoas que buscam programar mesmo  n
 
 Contribuições são bem vindas, este repositório é principalmente documentação, e eu não atualizo e nem pretendo atualizar muito ele ja que sequer uso mais termux
 porém, ele continua sendo útil para muita gente, então minhas contribuições continuarão ocasionalmente
+
+Para versões mais atualizadas do neovim, você pode usar minha [config pessoal](https://github.com/outragedline/dotfiles), mas saiba o que está fazendo
 ## Instalação
 
 Primeiro teremos que  instalar o termux, um emulador de terminal baseado em debian
