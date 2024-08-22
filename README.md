@@ -58,7 +58,7 @@ E então, você irá rodar o codigo abaixo, mas **atenção**, no codigo abaixo 
 
 Então crie um username pra você e com ele substitua todos os 5 locais onde aparece _username_
 ```
-mkdir /home/outragedline/
+mkdir /home/username/
 
 echo "#!/bin/bash" > /data/data/com.termux/files/home/.bashrc
 echo ". proot-distro login archlinux --user username" >> /data/data/com.termux/files/home/.bashrc
